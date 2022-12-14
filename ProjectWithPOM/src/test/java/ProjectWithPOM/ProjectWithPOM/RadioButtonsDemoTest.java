@@ -9,7 +9,7 @@ import pages.RadioButtonsDemoPage;
 public class RadioButtonsDemoTest extends Base {
 	RadioButtonsDemoPage RadioButtonsDemoPageObj;
 	
-	@Test
+	@Test(groups= {"regression"})
 	public void radioButtonNotSelected() throws IOException {
 		RadioButtonsDemoPageObj=new RadioButtonsDemoPage(driver);
 		RadioButtonsDemoPageObj.radioButtonEnabled();
@@ -19,7 +19,7 @@ public class RadioButtonsDemoTest extends Base {
 		RadioButtonsDemoPageObj=new RadioButtonsDemoPage(driver);
 		RadioButtonsDemoPageObj.maleRadiobuttonChecked();
 	}
-	@Test
+	@Test(groups= {"smoke"})
 	public void radioButtonFemaleSelected() throws IOException {
 		RadioButtonsDemoPageObj=new RadioButtonsDemoPage(driver);
 		RadioButtonsDemoPageObj.femaleRadiobuttonChecked();

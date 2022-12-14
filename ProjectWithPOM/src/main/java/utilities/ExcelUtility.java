@@ -1,8 +1,8 @@
 
 package utilities;
 
-import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.apache.poi.ss.usermodel.Cell;
@@ -33,4 +33,13 @@ public class ExcelUtility {
 		return c.getStringCellValue();
 
 		}
+	
+	public static String dynamicTableInput(int i,int j, String file_path, String sheet) throws IOException {
+		f = new FileInputStream(System.getProperty("user.dir") + file_path);
+		wb = new XSSFWorkbook(f);
+		sh = wb.getSheet(sheet);
+		Row r = sh.getRow(i);
+		Cell c = r.getCell(j);
+		return c.getStringCellValue();
+	}
 }
