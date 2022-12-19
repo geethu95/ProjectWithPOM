@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import utilities.ExcelUtility;
+import utilities.PageUtility;
 
 public class TablesPage {
 	public ExcelUtility excelUtilityObj;
@@ -21,7 +22,8 @@ public class TablesPage {
 	}
 
 	public void dynamicWebTable() throws IOException {
-
+	
+		PageUtility.ScrollBy(driver);
 		List<WebElement> rowCount = driver.findElements(tableRow);
 		rowCount.size();
 		List<WebElement> columnCount = driver.findElements(tableColumn);

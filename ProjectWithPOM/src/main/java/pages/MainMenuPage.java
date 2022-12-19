@@ -12,6 +12,7 @@ public class MainMenuPage extends Base{
 	WebDriver driver;
 	By mainMenu = By.xpath("//ul[@class='navbar-nav']//child::li//a");
 	
+	
 	public MainMenuPage(WebDriver driver) {
 		this.driver = driver;
 	}
@@ -24,4 +25,5 @@ public class MainMenuPage extends Base{
 			}
 		}
 	}
+	
 }

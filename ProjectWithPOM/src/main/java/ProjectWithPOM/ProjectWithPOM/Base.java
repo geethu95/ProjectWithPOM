@@ -16,7 +16,7 @@ public class Base {
 		System.setProperty("webdriver.chrome.driver",
 				System.getProperty("user.dir") + "\\src\\main\\java\\Resourses\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("https://selenium.obsqurazone.com/index.php");
+		driver.get("https://selenium.obsqurazone.com/simple-form-demo.php");
 		driver.manage().window().maximize();
 		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);       deprecated version(before selenium 4)
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));		   // after selenium 4
