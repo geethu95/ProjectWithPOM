@@ -13,5 +13,6 @@ public class MainMenuPageTest extends Base {
 		MainMenuPageObj=new MainMenuPage(driver);
 		MainMenuPageObj.mainMenu("PROGRESS BAR");
 		
+		
 	}
 }
